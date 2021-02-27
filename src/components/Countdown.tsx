@@ -3,7 +3,6 @@ import styles from '../styles/components/Countdown.module.css';
 import { CountdownContext } from '../contexts/CountdownContext';
 
 
-
 export function Countdown() {
     const {
         minutes,
@@ -11,13 +10,10 @@ export function Countdown() {
         hasFinished,
         isActive,
         startCountdown,
-        resetCountdown
+        resetCountdown,
     } = useContext(CountdownContext);
-
     const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');
     const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('');
-
-
 
     return (
         <div>

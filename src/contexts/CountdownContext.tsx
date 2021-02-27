@@ -23,7 +23,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
 
     const [time, setTime] = useState(0.05 * 60);
     const [isActive, setIsActive] = useState(false);
-    const [hasFinished, setHasFinished] = useState(false)
+    const [hasFinished, setHasFinished] = useState(false);
 
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
