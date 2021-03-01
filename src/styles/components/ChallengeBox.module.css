@@ -78,7 +78,7 @@
 
 .challengeActive main p {
     line-height: 1.5;
-    color: var(--gray-line);
+    color: var(--sub-title);
 }
 
 .challengeActive footer {

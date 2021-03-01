@@ -42,7 +42,8 @@ export default function Home({ toggleTheme, ...rest }) {
         </Head>
 
         <ExperienceBar />
-        <footer className={style.footer}>
+        
+        <div className={style.themeSwitcher}>
 
           <Switch
             onChange={toggleTheme}
@@ -68,7 +69,7 @@ export default function Home({ toggleTheme, ...rest }) {
             }
 
           />
-        </footer>
+        </div>
 
         <CountdownProvider>
           <section>

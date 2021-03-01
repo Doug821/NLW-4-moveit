@@ -12,6 +12,6 @@ export default {
         
         invertWhite: 'brightness(10%) contrast(100%)',
         invertBlack: 'brightness(0) invert(1)',
-        overlay: 'rgba(0, 0, 0, 0.75)',
+        overlay: 'rgba(1, 22, 39, 0.75)',
     }
 }
