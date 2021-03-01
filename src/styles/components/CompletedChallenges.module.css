@@ -5,7 +5,8 @@
 
     margin: 3.5rem 0;
     padding-bottom: 1rem;
-    border-bottom: 1px solidvar var(--gray-line);
+    border-bottom: 1px solid var(--gray-line);
+    color: var(--sub-title);
 
     font-weight: 500;
 }

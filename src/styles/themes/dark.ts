@@ -1,12 +1,15 @@
 export default {
     title: 'dark',
     colors: {
-        bodyColor: '#202024',
-        background: '#121214',
-        grayLine: '#29292e',
-        text: '#a8a8b3',
-        textHighlight: '#B3B9FF',
-        title: '#e1e1e6',
+        thinyBackground: '#022D50',
+        background: 'linear-gradient(252.03deg, #011627 0%, #002746 100%);',
+        title: '#FFF',
+        subTitle: '#DCDDE0',
+        grayLine: '#DCDDE0',
+        yellow: '#F9C80E',
+        yellowDark: '#FF8A0A',
+        textHighlight: '#B2B9FF',
+        
         invertWhite: 'brightness(10%) contrast(100%)',
         invertBlack: 'brightness(0) invert(1)',
         overlay: 'rgba(0, 0, 0, 0.75)',

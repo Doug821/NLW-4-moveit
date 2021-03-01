@@ -2,17 +2,19 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 :root {
-  --bodyColor: ${props => props.theme.colors.bodyColor};
+  --thinyBackground: ${props => props.theme.colors.thinyBackground};
   --background: ${props => props.theme.colors.background};
-  --gray-line: ${props => props.theme.colors.grayLine};
-  --text: ${props => props.theme.colors.text};
-  --text-highlight: ${props => props.theme.colors.textHighlight};
   --title: ${props => props.theme.colors.title};
+  --sub-title: ${props => props.theme.colors.subTitle};
+  --gray-line: ${props => props.theme.colors.grayLine};
+  --yellow: ${props => props.theme.colors.yellow};
+  --yellow-dark: ${props => props.theme.colors.yellowDark};
+  
   --red: #E83F5B;
   --green: #4CD62B;
-  --blue: #5965E0;
-  --blue-dark: #4953B8;
   --blue-twitter: #2AA9E0;
+  --text-highlight: ${props => props.theme.colors.textHighlight};
+
   --invert-white: ${props => props.theme.colors.invertWhite};
   --invert-black: ${props => props.theme.colors.invertBlack};
   --overlay: ${props => props.theme.colors.overlay};

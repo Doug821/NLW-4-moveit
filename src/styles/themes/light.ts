@@ -1,14 +1,18 @@
 export default {
     title: 'light',
     colors: {
-        bodyColor: '#fff',
-        background: '#f2f3f5',
-        grayLine: '#DCDDE0',
-        text: '#666666',
-        textHighlight: '#B3B9FF',
+        thinyBackground: '#FFF',
+        background: '#F2F3F5',
         title: '#2E384D',
-        invertWhite: 'brightness(0) invert(1)',
-        invertBlack: 'brightness(10%) contrast(100%)',
-        overlay: 'rgba(254, 254, 254, 0.75)',
+        subTitle: '#666666',
+        grayLine: '#DCDDE0',
+        yellow: '#F9C80E',
+        yellowDark: '#FF8A0A',
+        textHighlight: '#B2B9FF',
+
+        invertWhite: 'brightness(10%) contrast(100%)',
+        invertBlack: 'brightness(0) invert(1)',
+        overlay: 'rgba(0, 0, 0, 0.75)',
     }
 }
+ 

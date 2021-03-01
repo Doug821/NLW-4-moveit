@@ -28,12 +28,6 @@ export default function Home({ toggleTheme, ...rest }) {
 
   const { colors, title } = useContext(ThemeContext);
 
-  const uncheckedHandleIcon = () => {
-    alert('fui clicado')
-  }
-
-
-
   return (
 
     <ChallengesProvider
@@ -48,6 +42,33 @@ export default function Home({ toggleTheme, ...rest }) {
         </Head>
 
         <ExperienceBar />
+        <footer className={style.footer}>
+
+          <Switch
+            onChange={toggleTheme}
+            checked={title === 'dark'}
+            checkedIcon={true}
+            height={10}
+            width={36}
+            handleDiameter={20}
+            offHandleColor={colors.subTitle}
+            onHandleColor={colors.grayLine}
+            offColor={colors.grayLine}
+            onColor={colors.subTitle}
+            uncheckedIcon={false}
+            uncheckedHandleIcon={
+              <div className={style.buttonMode}>
+                <img style={{ width: '30px', height: '30px' }} src="icons/light.svg" alt="" />
+              </div>
+            }
+            checkedHandleIcon={
+              <div className={style.buttonMode}>
+                <img style={{ width: '30px', height: '30px' }} src="icons/dark.svg" alt="" />
+              </div>
+            }
+
+          />
+        </footer>
 
         <CountdownProvider>
           <section>
@@ -62,35 +83,6 @@ export default function Home({ toggleTheme, ...rest }) {
             </div>
           </section>
         </CountdownProvider>
-
-        <footer className={style.footer}>
-
-          <Switch
-            onChange={toggleTheme}
-            checked={title === 'dark'}
-            checkedIcon={true}
-            height={10}
-            width={36}
-            handleDiameter={20}
-            offHandleColor={colors.text}
-            onHandleColor={colors.textHighlight}
-            offColor={colors.grayLine}
-            onColor={colors.text}
-            uncheckedIcon={false}
-            uncheckedHandleIcon={
-              <div className={style.buttonMode}>
-                <img src="icons/sun.svg" alt="" />
-              </div>
-            }
-            checkedHandleIcon={
-              <div className={style.buttonMode}>
-                <img src="icons/moon.svg" alt="" />
-              </div>
-            }
-
-          />
-        </footer>
-
       </div>
     </ChallengesProvider>
 

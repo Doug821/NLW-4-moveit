@@ -4,15 +4,18 @@ declare module 'styled-components' {
     export interface DefaultTheme {
         title: string;
         colors: {
-            bodyColor: string;
-            background: string;
-            grayLine: string;
-            text: string;
-            textHighlight: string;
-            title: string;
-            invertWhite: string;
-            invertBlack: string;
-            overlay: string;
+            thinyBackground: string,
+            background: string,
+            title: string,
+            subTitle: string,
+            grayLine: string,
+            yellow: string,
+            yellowDark: string,
+            textHighlight: string,
+            
+            invertWhite: string,
+            invertBlack: string,
+            overlay: string,
         }
     }
 }
